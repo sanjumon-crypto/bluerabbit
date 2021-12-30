@@ -224,6 +224,8 @@ main {
   background-size: contain;
   height: 50px;
   position: relative;
+  width: 300px;
+  margin: 0 auto;
 }
 .welcome-marq marquee {
   font-weight: 500;
