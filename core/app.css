@@ -1,0 +1,471 @@
+:root {
+  --primary-color: #48a093;
+  --secondary-color: #f90;
+  --primary-font: "Maven Pro", sans-serif;
+  --secondary-font: "";
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  font-family: var(--primary-font);
+}
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #f6f6f6;
+}
+body.white {
+  background: #fff;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.fl-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.starter {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.action-sec {
+  padding-bottom: 30px;
+}
+main {
+  background: #f6f6f6;
+  min-height: 100%;
+  padding: 0 10px;
+}
+.banner {
+  min-height: 9.2rem;
+  position: relative;
+  background: url("./images/home_card.png") no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+.banner h6 {
+  font-weight: normal;
+  font-size: 14px;
+}
+.home-icon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 125px;
+  transform: translate(0, -50%);
+}
+.app-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.card-head {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.card-head h2 {
+  font-size: 19px;
+}
+.card-head h3 {
+  color: #a19a9a;
+  font-size: 14px;
+  font-weight: normal;
+}
+.global_ul {
+  justify-content: space-between;
+}
+.global_ul li {
+  width: 30%;
+}
+.global_ul li:nth-child(-n + 3) {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 1.2rem;
+}
+.about-us-sec .main-contnet p {
+  font-size: 13px;
+  line-height: 22px;
+  color: #333;
+}
+.about-img {
+  margin: 2rem 0;
+}
+.tag-line {
+  font-size: 12px;
+  line-height: 17px;
+  margin-top: 10px;
+}
+.btn-app {
+  background: linear-gradient(270deg, #4caa8e, #5bc878);
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50px;
+  line-height: 40px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
+  color: #fff;
+}
+.icon-proj {
+  width: 49%;
+  text-align: center;
+  padding-top: 35px;
+}
+.icon-proj p {
+  font-size: 12px;
+}
+.icon-proj h3 {
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+.icon-proj figure {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -50px;
+}
+.dd-cards .card-head {
+  margin-bottom: 2.5rem;
+}
+.wl-card {
+  width: 49%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 50px;
+}
+.wl-card h3 {
+  font-size: 15px;
+}
+.wl-card p {
+  font-size: 13px;
+  color: #d5c8c8;
+}
+.count h3 {
+  font-size: 14px;
+}
+.count h3 span {
+  color: var(--primary-color);
+}
+.count h3 i {
+  font-weight: normal;
+  font-size: 12px;
+}
+.count {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 15px;
+}
+.action-sec ul li {
+  width: 33%;
+  text-align: center;
+}
+.action-sec ul li:nth-child(-n + 3) {
+  margin-bottom: 1rem;
+}
+.action-sec ul li a {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+.action-sec ul li figure {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  display: block;
+}
+.info-sec h3 {
+  font-size: 15px;
+}
+.info-sec h3 span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.info-sec ul li:last-child {
+  height: 50px;
+  width: 60px;
+}
+.welcome-marq {
+  background: url("./images/marq_bg.png") no-repeat;
+  background-size: contain;
+  height: 50px;
+  position: relative;
+}
+.welcome-marq marquee {
+  font-weight: 500;
+  line-height: 42px;
+  overflow: hidden;
+  margin-right: 40px;
+  font-size: 15px;
+  margin-left: 40px;
+}
+.welcome-marq img {
+  width: 25px;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+}
+.app-header {
+  padding: 10px;
+  position: relative;
+}
+.app-header .logo {
+  position: absolute;
+  font-weight: 500;
+}
+.action-icon a {
+  display: inline-block;
+  width: 15px;
+}
+.action-icon ul {
+  justify-content: flex-end;
+}
+.action-icon ul li {
+  margin-right: 15px;
+}
+.fixed-bottom-nav {
+  background: #fff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  bottom: 0;
+  box-shadow: 0 0 4px 2px #0000002b;
+  max-width: 400px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.fixed-bottom-nav ul li {
+  width: 18%;
+}
+.fixed-bottom-nav ul li a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+.fixed-bottom-nav ul li a span {
+  display: block;
+  width: 25px;
+  margin: 0 auto;
+}
+.fixed-bottom-nav ul li:nth-child(3) {
+  position: relative;
+  margin-top: -40px;
+  width: 20%;
+}
+.fixed-bottom-nav ul li:nth-child(3) span {
+  width: 100%;
+}
+.trading-acc {
+  text-align: center;
+  padding-top: 40px;
+}
+.trading-profit h4 {
+  text-align: left;
+  position: relative;
+  margin-top: 1.8rem;
+  font-weight: 500;
+}
+.trading-profit span {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  font-weight: normal;
+  top: 3 px;
+}
+.share-acc {
+  padding-top: 2rem;
+  text-align: center;
+}
+.qr_code {
+  width: 120px;
+  margin: 0 auto 1rem;
+  background: #cfe4db;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.share-acc p {
+  color: #9999a5;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.share-card {
+  background: url("./images/share_bg.png") no-repeat;
+  background-size: 100%;
+  height: 12rem;
+  margin-top: 2rem;
+}
+.share-card .content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+  color: #fff;
+}
+.share-card .content h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.share-card .content p {
+  font-size: 13px;
+}
+.share-code {
+  margin-top: 1.2rem;
+  position: relative;
+}
+.share-code input {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding-right: 60px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.share-code .btn-app {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border-radius: 8px;
+  width: auto;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.user_wrap {
+  background: url("./images/user_bg.png") no-repeat;
+  background-size: contain;
+}
+.user_wrap .starter {
+  background: none;
+}
+.user_wrap .starter figure {
+  width: 120px;
+  margin: 20px auto 0;
+}
+h4.balance span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+}
+h4.balance {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+.profile-service .trading-profit > h4 {
+  padding: 0 15px;
+}
+.app_service ul li:nth-child(4) {
+  margin-bottom: 1rem;
+}
+.user_wrap .starter .list figure {
+  margin: 0 10px 0 0;
+  width: 25px;
+  width: 30px;
+}
+.jspa {
+  justify-content: space-around;
+}
+.cont-wrap div.left {
+  width: 60%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.cont-wrap div.left h3 {
+  color: var(--primary-color);
+  font-size: 20px;
+  line-height: 40px;
+}
+.cont-wrap div.left h3 em {
+  font-style: normal;
+  font-size: 0.6em;
+  position: relative;
+  top: -2px;
+  left: 3px;
+}
+.cont-wrap div.right {
+  width: 7rem;
+}
+.cont-wrap p {
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.user_wrap {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .share-card {
+    height: 15rem;
+  }
+  .white .wrapper {
+    background: #fff;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .user_wrap .starter figure {
+    margin: 80px auto 0;
+  }
+  .share-card {
+    height: 14rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .user_wrap .starter figure {
+    margin: 50px auto 0;
+  }
+  .share-card {
+    height: 12rem;
+  }
+}
