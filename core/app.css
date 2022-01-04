@@ -334,7 +334,7 @@ main {
 .qr_code {
   width: 120px;
   margin: 0 auto 1rem;
-  background: #cfe4db;
+  background: #eabfff;
   padding: 7px;
   box-sizing: border-box;
   border-radius: 8px;
@@ -345,7 +345,7 @@ main {
   font-size: 14px;
 }
 .share-card {
-  background: url("./images/share_bg.png") no-repeat;
+  background: url("./core/images/share_card.png") no-repeat;
   background-size: 100%;
   height: 12rem;
   margin-top: 2rem;
