@@ -345,7 +345,7 @@ main {
   font-size: 14px;
 }
 .share-card {
-  background: url("./core/images/share_card.png") no-repeat;
+  background: url("./images/share_card.png") no-repeat;
   background-size: 100%;
   height: 12rem;
   margin-top: 2rem;
