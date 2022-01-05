@@ -17,6 +17,7 @@ body {
   min-height: 100%;
   background: #f6f6f6;
 }
+html.white,
 body.white {
   background: #fff;
 }
@@ -467,6 +468,19 @@ h4.balance {
   width: 100%;
 }
 
+/*--- Notificaiton Screen ---*/
+.notification-sec {
+  background-color: #f0f3f7;
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.notifi-card {
+  position: relative;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+}
 @media only screen and (min-width: 600px) {
   .share-card {
     height: 15rem;
