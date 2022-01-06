@@ -263,6 +263,9 @@ main {
 .action-icon ul li {
   margin-right: 15px;
 }
+.action-icon ul li:last-child{
+  margin-right: 0;
+}
 .fixed-bottom-nav {
   background: #fff;
   padding: 10px;
@@ -580,4 +583,62 @@ h4.balance {
   .share-card {
     height: 12rem;
   }
+}
+
+
+/*deposite-con*/
+
+.deposit-con .app-header .logo{
+  display: inline-flex;
+}
+.deposit-con .app-header .logo img{
+  width: 10px;
+  margin-right: 8px;
+}
+.deposit-con .app-header{
+  padding: 20px 0;
+}
+.deposit-con .qr_code{
+  width: 145px;
+  background: none;
+}
+.deposit-con figure.qr_code{
+  margin-bottom: 0;
+}
+
+.deposit-con .share-acc h5{
+  font-size: 15px;
+  font-weight: 500;
+  color: green;
+}
+
+.deposit-con .recharge-con{
+    background-color: #f0f3f7;
+    border-radius: 20px;
+    padding: 15px 10px;
+}
+.deposit-con .recharge-con .address-copy{
+  display: flex;
+  justify-content: space-between;
+}
+.deposit-con .recharge-con .address-copy input{
+  border-radius: 18px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  min-height: 33px;
+  padding: 0 7px;
+  width: 60%;
+}
+.deposit-con .recharge-con .address-copy button{
+    background-color: #64c489;
+    color: #fff;
+    border-radius: 24px;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    min-height: 33px;
+    width: 40%;
+    border: 1px solid #64c489;
+    font-size: 14px;
 }
