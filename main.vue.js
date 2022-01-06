@@ -1,7 +1,7 @@
 Vue.component("app-header", {
   props: ["name"],
   template: ` <header class="app-header">
-  <div class="logo">{{name}}</div>
+  <a class="logo" onclick="history.back()"><img src="images/back.svg">{{name}}</a>
   <div class="action-icon">
     <ul class="fl-wrap">
       <li>

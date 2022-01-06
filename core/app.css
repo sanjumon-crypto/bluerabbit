@@ -510,14 +510,14 @@ h4.balance {
 
 /*deposite-con*/
 
-.deposit-con .app-header .logo{
+.main-con .app-header .logo{
   display: inline-flex;
 }
-.deposit-con .app-header .logo img{
+.main-con .app-header .logo img{
   width: 10px;
   margin-right: 8px;
 }
-.deposit-con .app-header{
+.main-con .app-header{
   padding: 20px 0;
 }
 .deposit-con .qr_code{
@@ -534,16 +534,16 @@ h4.balance {
   color: green;
 }
 
-.deposit-con .recharge-con{
+.recharge-con{
     background-color: #f0f3f7;
     border-radius: 20px;
-    padding: 15px 10px;
+    padding: 25px 10px;
 }
-.deposit-con .recharge-con .address-copy{
+.recharge-con .address-copy{
   display: flex;
   justify-content: space-between;
 }
-.deposit-con .recharge-con .address-copy input{
+.recharge-con .address-copy input{
   border-radius: 18px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -553,14 +553,140 @@ h4.balance {
   padding: 0 7px;
   width: 60%;
 }
-.deposit-con .recharge-con .address-copy button{
-    background-color: #64c489;
+.recharge-con .address-copy button{
+    background-color: #3d2e8a;
     color: #fff;
     border-radius: 24px;
     border-top-left-radius: 0!important;
     border-bottom-left-radius: 0!important;
     min-height: 33px;
     width: 40%;
-    border: 1px solid #64c489;
+    border: 1px solid #3d2e8a;
     font-size: 14px;
+}
+.recharge-con .discriptionCon{
+  background-color: #fff;
+  padding: 15px 10px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+.recharge-con .discriptionCon p{
+  color: #6c757d;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+.recharge-con .discriptionCon p.red{
+  color: red;
+  margin-top: 8px;
+}
+.recharge-con .btn-app {
+    text-align: center;
+    line-height: 33px;
+    margin-top: 15px;
+    max-width: 100%;
+  }
+
+/*withdrawal*/
+
+.withdrawal-con{
+  width: 100%;
+  background-color: #f0f3f7;
+  border-radius: 20px;
+  padding: 25px 15px;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}  
+p.alt{
+  font-size: 15px;
+  color: #6c757d;
+}
+p.red{
+  color: red;
+}
+p span.blue{
+  color: #20c2ce;
+}
+.withdrawal-con p.red{
+  margin-top: 4px;
+}
+.withdrawal-con .amount-div{
+  background-color: #e9ecef;
+  font-size: 50px;
+  line-height: 60px;
+  height: auto;
+  font-weight: 500;
+  border: 0;
+  text-align: center;
+  border-radius: 18px;
+  padding: 15px 0;
+  margin: 7px 0;
+  color: #495057;
+}
+.withdrawal-con .form-con{margin-top: 15px;}
+.withdrawal-con .form-con .form-group{ width: 100%; position: relative; margin-bottom: 10px; line-height: 0;}
+.withdrawal-con .form-con .form-group span.cred{
+  font-size: 13px;
+  font-weight: 400;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  color: red;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+.withdrawal-con .form-con .form-group input, .withdrawal-con .form-con .form-group select, .withdrawal-con .form-con .form-group textarea{
+  border-radius: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #ced4da;
+  height: 33px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+.withdrawal-con .form-con .form-group textarea{
+  height: 55px;
+  padding: 6px 12px;
+}
+
+.withdrawal-con .form-con .btn-app{height: 33px; max-width: 100%; line-height: 32px; margin-top: 13px;}
+
+
+/*transfer to basic */
+.withdrawal-con .ac-plan{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.withdrawal-con .ac-plan .item{
+  width: 36%;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 5%);
+  -webkit-box-shadow: 0 2px 5px rgb(0 0 0 / 5%);
+  border-radius: 18px;
+  min-height: 53px;
+  max-height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.withdrawal-con .ac-plan .item p.alt{
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.withdrawal-con .ac-plan .item h5{
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+.wrapper{
+  min-height: 480px;
 }
