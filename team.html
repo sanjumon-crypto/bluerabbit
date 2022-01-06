@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>BlueRabbit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./core/app.css" type="text/css" />
+  </head>
+  <body>
+    <section id="app" class="wrapper">
+      <div class="starter">
+        <app-header name="Team"></app-header>
+      </div>
+      <div class="notification-sec">
+        <div class="notifi-card team-card">
+          <ul>
+            <li>
+              <div class="level-card">
+                <button>Lev 1</button>
+                <span>0</span>
+              </div>
+            </li>
+            <li>
+              <div class="level-card">
+                <button>Lev 2</button>
+                <span>0</span>
+              </div>
+            </li>
+            <li>
+              <div class="level-card">
+                <button>Lev 3</button>
+                <span>0</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <table class="table-team">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <app-footer></app-footer>
+    </section>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="main.vue.js"></script>

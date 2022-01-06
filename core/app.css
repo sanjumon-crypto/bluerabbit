@@ -21,6 +21,9 @@ html.white,
 body.white {
   background: #fff;
 }
+html.white .wrapper {
+  background-color: #fff;
+}
 ul {
   list-style: none;
 }
@@ -472,14 +475,89 @@ h4.balance {
 .notification-sec {
   background-color: #f0f3f7;
   border-radius: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 .notifi-card {
   position: relative;
   padding: 15px;
   background: #fff;
   border-radius: 10px;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+.notifi-card:last-child {
+  margin-bottom: 0 !important;
+}
+.notifi-card span.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.inner-content h3 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  line-height: 15px;
+}
+.inner-content p {
+  font-size: 0.6em;
+  font-weight: 400;
+  color: #333;
+}
+.notifi-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.notifi-card ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-card {
+  padding-left: 15px;
+}
+.team-card ul li {
+  padding: 0 5px;
+}
+.team-card ul li,
+.team-card ul li .level-card {
+  width: 100%;
+}
+.level-card button {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 10px;
+  line-height: 28px;
+  background: linear-gradient(270deg, #3d2e8a, #763092);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.level-card span {
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+}
+.table-team {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 100px;
+  font-weight: normal;
+}
+.table-team thead > tr > th {
+  font-weight: 400;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+  border-bottom: 1px solid #f7f7f7;
+}
+.table-team thead > tr > th:last-child {
+  text-align: right;
 }
 @media only screen and (min-width: 600px) {
   .share-card {
