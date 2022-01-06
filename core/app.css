@@ -806,10 +806,21 @@ p span.blue{
   border: 1px solid #dcdfe6;
   border-radius: 6px;
   box-sizing: border-box;
+  background: #fff;
 }
 .profile-list-con .date-con button.btn-app {
     height: 33px;
     line-height: 31px;
     max-width: 100%;
     margin-top: 7px;
+}
+
+@media(min-width: 375px) and(max-width: 425px){
+  .withdrawal-con .form-con .form-group input, .withdrawal-con .form-con .form-group select, .withdrawal-con .form-con .form-group textarea{
+    height: 39px;
+  }
+  .withdrawal-con .form-con .btn-app{
+    height: 39px;
+    line-height: 39px;
+  }
 }
