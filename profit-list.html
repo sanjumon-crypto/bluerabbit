@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>BlueRabbit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./core/app.css" type="text/css" />
+  </head>
+  <body>
+    <section id="app" class="wrapper main-con">
+      <div class="starter">
+        <app-header name="Profit List"></app-header>
+      </div>
+      <div class="notification-sec profile-list-con">
+        <div class="date-con">
+          <form>
+            <input type="date" id="date1" class="form-control"><span>~</span>
+            <input type="date" id="date2" class="form-control">
+            <button class="btn-app">Search</button>
+          </form>
+        </div>
+         <div class="ac-plan">
+          <div class="item">
+            <p class="alt">Basic account</p>
+            <h5>600.00 TRX</h5>
+          </div><!-- itm -->
+          <div class="item">
+            <p class="alt">Promotion account</p>
+            <h5>0.000 TRX</h5>
+          </div><!-- itm -->
+        </div><!-- ac-plan -->
+        <div class="pro-list-table">
+        <table class="table-team">
+          <thead><h4>Profit List</h4>
+            <tr>
+              <th>Date</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        </div><!-- pro-list-table -->
+      </div>
+
+      <app-footer></app-footer>
+    </section>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="main.vue.js"></script>

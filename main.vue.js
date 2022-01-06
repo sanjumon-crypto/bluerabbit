@@ -6,17 +6,17 @@ Vue.component("app-header", {
     <ul class="fl-wrap">
       <li>
         <a href="javascript:void(0)"
-          ><img src="./core/images/en.png" class="img-fluid"
+          ><img src="./core/images/en.svg" class="img-fluid"
         /></a>
       </li>
       <li>
         <a href="javascript:void(0)"
-          ><img src="./core/images/bell.png" class="img-fluid"
+          ><img src="./core/images/bell.svg" class="img-fluid"
         /></a>
       </li>
       <li>
         <a href="javascript:void(0)"
-          ><img src="./core/images/headphone.png" class="img-fluid"
+          ><img src="./core/images/headphone.svg" class="img-fluid"
         /></a>
       </li>
     </ul>

@@ -588,14 +588,14 @@ h4.balance {
 
 /*deposite-con*/
 
-.main-con .app-header .logo{
+.app-header .logo{
   display: inline-flex;
 }
-.main-con .app-header .logo img{
+.app-header .logo img{
   width: 10px;
   margin-right: 8px;
 }
-.main-con .app-header{
+.app-header{
   padding: 20px 0;
 }
 .deposit-con .qr_code{
@@ -736,12 +736,12 @@ p span.blue{
 
 
 /*transfer to basic */
-.withdrawal-con .ac-plan{
+ .ac-plan{
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.withdrawal-con .ac-plan .item{
+.ac-plan .item{
   width: 36%;
   background-color: #fff;
   padding: 15px;
@@ -755,16 +755,61 @@ p span.blue{
   align-items: center;
   flex-wrap: wrap;
 }
-.withdrawal-con .ac-plan .item p.alt{
+.ac-plan .item p.alt{
   font-size: 11px;
   font-weight: 500;
-  color: var(--primary-color);
+  color: #6c757d;
 }
-.withdrawal-con .ac-plan .item h5{
+.ac-plan .item h5{
   color: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
 }
 .wrapper{
   min-height: 480px;
+}
+
+/*profile list*/
+.profile-list-con .pro-list-table{
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 100px;
+    font-weight: normal;
+}
+.profile-list-con .pro-list-table h4 {
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: solid 1px #dee2e6;
+    padding: 10px 11px;
+}
+.profile-list-con .ac-plan{
+  margin-bottom: 15px;
+}
+.profile-list-con .date-con form{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.profile-list-con .date-con span{
+  font-size: 24px;
+}
+.profile-list-con .date-con .form-control{
+  width:45%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 4px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.profile-list-con .date-con button.btn-app {
+    height: 33px;
+    line-height: 31px;
+    max-width: 100%;
+    margin-top: 7px;
 }
