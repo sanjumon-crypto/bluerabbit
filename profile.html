@@ -17,31 +17,10 @@
     <link rel="stylesheet" href="./core/app.css" type="text/css" />
   </head>
   <body class="white">
-    <section class="user_wrap">
+    <section class="user_wrap" id="app">
       <section class="wrapper">
         <div class="starter">
-          <header class="app-header">
-            <div class="logo">8113001260</div>
-            <div class="action-icon">
-              <ul class="fl-wrap">
-                <li>
-                  <a href="javascript:void(0)"
-                    ><img src="./core/images/en.png" class="img-fluid"
-                  /></a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)"
-                    ><img src="./core/images/bell.png" class="img-fluid"
-                  /></a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)"
-                    ><img src="./core/images/headphone.png" class="img-fluid"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-          </header>
+          <app-header name="1234567890"></app-header>
           <div class="trading-acc mb-2">
             <figure>
               <img src="./core/images/user3.png" alt="" class="img-fluid" />
@@ -95,7 +74,7 @@
           <div class="action-sec app_service">
             <ul class="fl-wrap" style="align-items: flex-start">
               <li>
-                <a href="javascript:void(0)">
+                <a href="./team.html">
                   <figure>
                     <img
                       src="./core/images/team.png"
@@ -131,7 +110,7 @@
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)">
+                <a href="./share.html">
                   <figure>
                     <img
                       src="./core/images/share.png"
@@ -143,7 +122,7 @@
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)">
+                <a href="./notification.html">
                   <figure>
                     <img
                       src="./core/images/notification.png"
@@ -177,61 +156,9 @@
             </ul>
           </div>
         </div>
-      </section>
-      <!-- Bottom Footer Nav -->
-      <div class="fixed-bottom-nav">
-        <ul class="fl-wrap">
-          <li>
-            <a href="index.html"
-              ><span
-                ><img
-                  src="./core/images/home.png"
-                  alt=""
-                  class="img-fluid" /></span
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="trading.html"
-              ><span
-                ><img
-                  src="./core/images/trade.png"
-                  alt=""
-                  class="img-fluid" /></span
-              >Trading</a
-            >
-          </li>
-          <li>
-            <a href="index.html"
-              ><span
-                ><img
-                  src="./core/images/mids_logo.png"
-                  alt=""
-                  class="img-fluid" /></span
-            ></a>
-          </li>
-          <li>
-            <a href="share.html"
-              ><span
-                ><img
-                  src="./core/images/share..png"
-                  alt=""
-                  class="img-fluid" /></span
-              >Share</a
-            >
-          </li>
-          <li>
-            <a href="profile.html" class="active"
-              ><span
-                ><img
-                  src="./core/images/user.png"
-                  alt=""
-                  class="img-fluid" /></span
-              >Me</a
-            >
-          </li>
-        </ul>
-      </div>
+        <app-footer></app-footer>
     </section>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="main.vue.js"></script>
