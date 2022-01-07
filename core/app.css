@@ -578,7 +578,7 @@ h4.balance {
 
 @media only screen and (max-width: 375px) {
   .user_wrap .starter figure {
-    margin: 50px auto 0;
+    margin: 25px auto 0;
   }
   .share-card {
     height: 12rem;
@@ -814,13 +814,24 @@ p span.blue{
     max-width: 100%;
     margin-top: 7px;
 }
+@media(max-width: 320px){
+  .user_wrap .starter figure{
+    margin: 0 auto;
+  }
+}
+@media(min-width: 375px) and (max-width: 425px){
+  .withdrawal-con .form-con .form-group input, .withdrawal-con .form-con .form-group select, .withdrawal-con .form-con .form-group textarea, 
+  .profile-list-con .date-con button.btn-app, .withdrawal-con .form-con .btn-app{
+    height: 39px;
+  }
+  .user_wrap .starter figure{
+    margin: 40px auto !important;
+  }
+  .recharge-con .discriptionCon p{
+    font-size: 12px;
+  }
+  ul.list.fl-wrap.jspa li .fl-wrap figure {
+    margin-right: 10px !important;
+  }
 
-@media(min-width: 375px) and(max-width: 425px){
-  .withdrawal-con .form-con .form-group input, .withdrawal-con .form-con .form-group select, .withdrawal-con .form-con .form-group textarea{
-    height: 39px;
-  }
-  .withdrawal-con .form-con .btn-app{
-    height: 39px;
-    line-height: 39px;
-  }
 }
