@@ -76,10 +76,11 @@
           </div>
           <!-- / D1 Tab-->
           <!-- Tab Content -->
-          <h4>Staking Profit</h4>
-          <div class="value-trx">
-            <h6>3965.93751651 <span>TRX</span></h6>
-          </div>
+          <div class="tab-card active-tab" id="earn">
+            <h4>Staking Profit</h4>
+            <div class="value-trx">
+              <h6>3965.93751651 <span>TRX</span></h6>
+            </div>
           <div class="counter-trx">
             <p>
               <span>12<small>Day</small></span>
@@ -88,13 +89,14 @@
               <span>52<small>Sec</small></span>
             </p>
           </div>
+          </div>
           <!--  / Tab Content -->
         </div>
         <!-- Step Tab Head-->
         <div class="step-tab-head button-theme-holder">
           <ul class="m-flex j-evenly">
             <li data-step="1">
-              <a href="#"
+              <a href="#stake" class="tab-target-link" data-target="tab-card" 
                 ><figure class="m-flex j-center a-center">
                   <img src="./core/images/step-icon/stake.svg" alt="" />
                 </figure>
@@ -102,7 +104,7 @@
               >
             </li>
             <li data-step="2">
-              <a href="#"
+              <a href="#burn" class="tab-target-link" data-target="tab-card" 
                 ><figure class="m-flex j-center a-center">
                   <img src="./core/images/step-icon/burn.svg" alt="" />
                 </figure>
@@ -110,7 +112,7 @@
               >
             </li>
             <li data-step="3">
-              <a href="#"
+              <a href="#earn" class="tab-target-link" data-target="tab-card" 
                 ><figure class="m-flex j-center a-center">
                   <img src="./core/images/step-icon/earn.svg" alt="" />
                 </figure>
@@ -154,7 +156,7 @@
             <li>
               <a href="#"
                 ><figure class="m-flex j-center a-center">
-                  <img src="./core/images/step-icon/earn.svg" alt="DBANK" />
+                  <img src="./core/images/share.svg" alt="DBANK" />
                 </figure>
                 <span>Share</span></a
               >
@@ -290,4 +292,26 @@
           </ul>
         </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('body').on('click', '.tab-target-link', function(e) {
+          var target = $(this).attr('href');
+          if (target == 'javascript:;') {
+              return
+          }
+          e.preventDefault();
+          var tabBody = '.' + $(this).attr("data-target");
+          var parent = $(this).closest('div');
+          var childli = $(parent).children('ul').find('li');
+          childli.removeClass('active');
+          $(tabBody).removeClass("active-tab");
+          $(this).parent().addClass('active');
+          var target = $(this).attr('href');
+          if (target != 'javascript:;') {
+              $(target).addClass('active-tab');
+          }
+      });
+  });
+</script>
 </html>
