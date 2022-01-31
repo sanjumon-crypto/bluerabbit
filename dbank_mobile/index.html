@@ -57,9 +57,10 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+
   </head>
   <body>
-    <section class="main-wrapper">
+    <section class="main-wrapper" id="app2">
       <div class="m-container">
         <header><h1>DBANK</h1></header>
         <!-- Banner -->
@@ -76,6 +77,18 @@
           </div>
           <!-- / D1 Tab-->
           <!-- Tab Content -->
+
+          <div class="active-mining">
+            <h3>Activate Mining Node</h3>
+            <p class="alt">
+              <span>Phase 1 Activation requires</span> 1,000 TRX<br>
+              <span>You mine </span>25,000 SmartTron
+            </p>
+            <a class="common-btn glass-btn" href="#">Activate Phase 1</a>
+            <h5>Click here to go to the next step.</h5>
+          </div><!-- active-mining -->
+
+          <div style="display:none;">
           <h4>Staking Profit</h4>
           <div class="value-trx">
             <h6>3965.93751651 <span>TRX</span></h6>
@@ -89,6 +102,7 @@
             </p>
           </div>
           <!--  / Tab Content -->
+        </div><!-- display:none; -->
         </div>
         <!-- Step Tab Head-->
         <div class="step-tab-head button-theme-holder">
@@ -237,9 +251,9 @@
 
 
  <!-- tronlink popup -->
-
-  <div class="tronlink_pop">
-    <div class="popup-con"><a class="tronlink_pop_close">x</a>
+<transition name="fade" appear>
+  <div class="tronlink_pop" v-if="showpop" >
+    <div class="popup-con"><a class="tronlink_pop_close" v-on:click="closepop">x</a>
       <ul>
         <li><figure><a href="#"><img src="https://defeebank.io/core/images/tron-link.svg" alt="klever" class="img-fluid"></a></figure></li>
          <li><figure><a href="#"><img src="https://defeebank.io/core/images/klever.png" alt="klever" class="img-fluid"></a></figure></li>
@@ -248,8 +262,8 @@
       <a href="#" class="common-btn">Connect Wallet</a>
     </div><!-- popup-con -->
   </div><!-- tronlink-pop -->
-
-
+</transition>
+ <!-- tronlink popup -->
 
 
     </section>
@@ -311,7 +325,8 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="../dbank_mobile/core/js/testView.js"></script>
 
   </body>
 </html>
