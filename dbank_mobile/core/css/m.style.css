@@ -446,6 +446,7 @@ header {
 }
 .tronlink_pop .popup-con{
   width: 90%;
+  max-width: 330px;
   background-color: #fff;
   border-radius: 35px;
   padding: 45px 15px;
