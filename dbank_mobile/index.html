@@ -76,19 +76,44 @@
           </div>
           <!-- / D1 Tab-->
           <!-- Tab Content -->
-          <div class="tab-card active-tab" id="earn">
+          <div class="tab-card active-tab" id="stake">
+            <h4 class="mb-0">Staking:Active</h4>
+            <h6>The Current Staking process is active</h6>
+            <!-- Progress Staking-->
+            <div class="prog-holder mb-2">
+              <div class="progress-area mb-2">
+                <label>Staked Amount</label>
+                <div class="progress-bar glass-tec">
+                  <div class="progress" style="width: 0%"></div>
+                  <span class="prog-label">1000 TRX</span>
+                  <span class="prog-caption">50,000 TRX</span>
+                </div>
+              </div>
+              <div class="progress-area">
+                <label>Staking Duration</label>
+                <div class="progress-bar glass-tec">
+                  <div class="progress" style="width: 0%"></div>
+                  <span class="prog-label">1000 TRX</span>
+                  <span class="prog-caption">10000 Days</span>
+                </div>
+              </div>
+            </div>
+            <!-- Upgrade Btn -->
+            <button class="common-btn glass-btn">Upgrade Limit</button>
+          </div>
+          <div class="tab-card" id="earn">
             <h4>Staking Profit</h4>
             <div class="value-trx">
               <h6>3965.93751651 <span>TRX</span></h6>
             </div>
-          <div class="counter-trx">
-            <p>
-              <span>12<small>Day</small></span>
-              <span>12<small>Hour</small></span>
-              <span>42<small>Min</small></span>
-              <span>52<small>Sec</small></span>
-            </p>
-          </div>
+            <div class="counter-trx">
+              <p>
+                <span>12<small>Day</small></span>
+                <span>12<small>Hour</small></span>
+                <span>42<small>Min</small></span>
+                <span>52<small>Sec</small></span>
+              </p>
+            </div>
           </div>
           <!--  / Tab Content -->
         </div>
@@ -96,7 +121,7 @@
         <div class="step-tab-head button-theme-holder">
           <ul class="m-flex j-evenly">
             <li data-step="1">
-              <a href="#stake" class="tab-target-link" data-target="tab-card" 
+              <a href="#stake" class="tab-target-link" data-target="tab-card"
                 ><figure class="m-flex j-center a-center">
                   <img src="./core/images/step-icon/stake.svg" alt="" />
                 </figure>
@@ -104,7 +129,7 @@
               >
             </li>
             <li data-step="2">
-              <a href="#burn" class="tab-target-link" data-target="tab-card" 
+              <a href="#burn" class="tab-target-link" data-target="tab-card"
                 ><figure class="m-flex j-center a-center">
                   <img src="./core/images/step-icon/burn.svg" alt="" />
                 </figure>
@@ -112,7 +137,7 @@
               >
             </li>
             <li data-step="3">
-              <a href="#earn" class="tab-target-link" data-target="tab-card" 
+              <a href="#earn" class="tab-target-link" data-target="tab-card"
                 ><figure class="m-flex j-center a-center">
                   <img src="./core/images/step-icon/earn.svg" alt="" />
                 </figure>
@@ -226,7 +251,10 @@
             </div>
             <div class="reward-card">
               <figure>
-                <img src="./core/images/counter-icon/received.png" alt="DBANK" />
+                <img
+                  src="./core/images/counter-icon/received.png"
+                  alt="DBANK"
+                />
               </figure>
               <div class="inner-content">
                 <h4>TOTAL <span>RECEIVED</span></h4>
@@ -237,105 +265,117 @@
         </div>
       </div>
 
+      <!-- tronlink popup -->
 
- <!-- tronlink popup -->
-
-  <div class="tronlink_pop">
-    <div class="popup-con"><a class="tronlink_pop_close">x</a>
-      <ul>
-        <li><figure><a href="#"><img src="https://defeebank.io/core/images/tron-link.svg" alt="klever" class="img-fluid"></a></figure></li>
-         <li><figure><a href="#"><img src="https://defeebank.io/core/images/klever.png" alt="klever" class="img-fluid"></a></figure></li>
-      </ul>
-      <p class="alt">To join the project you need <br>to use Tronlink wallet</p>
-      <a href="#" class="common-btn">Connect Wallet</a>
-    </div><!-- popup-con -->
-  </div><!-- tronlink-pop -->
-
-
-
-
-    </section>
-        <!-- Bottom Footer Nav -->
-        <div class="fixed-bottom-nav">
-          <ul class="m-flex j-around">
+      <div class="tronlink_pop" style="display: none">
+        <div class="popup-con">
+          <a class="tronlink_pop_close">x</a>
+          <ul>
             <li>
-              <a href="index.html" class="active"
-                ><span
+              <figure>
+                <a href="#"
                   ><img
-                    src="./core/images/home.svg"
-                    alt=""
-                    class="img-fluid" /></span
-                >Home</a
-              >
+                    src="https://defeebank.io/core/images/tron-link.svg"
+                    alt="klever"
+                    class="img-fluid"
+                /></a>
+              </figure>
             </li>
             <li>
-              <a href="trading.html"
-                ><span
+              <figure>
+                <a href="#"
                   ><img
-                    src="./core/images/trade.svg"
-                    alt=""
-                    class="img-fluid" /></span
-                >Swap</a
-              >
-            </li>
-            <li>
-              <a href="index.html"
-                ><span
-                  ><img
-                    src="./core/images/dbank-logo.svg"
-                    alt=""
-                    class="img-fluid" /></span
-              ></a>
-            </li>
-            <li>
-              <a href="share.html"
-                ><span
-                  ><img
-                    src="./core/images/share.svg"
-                    alt=""
-                    class="img-fluid" /></span
-                >Share</a
-              >
-            </li>
-            <li>
-              <a href="profile.html"
-                ><span
-                  ><img
-                    src="./core/images/profile.svg"
-                    alt=""
-                    class="img-fluid" /></span
-                >Me</a
-              >
+                    src="https://defeebank.io/core/images/klever.png"
+                    alt="klever"
+                    class="img-fluid"
+                /></a>
+              </figure>
             </li>
           </ul>
+          <p class="alt">
+            To join the project you need <br />to use Tronlink wallet
+          </p>
+          <a href="#" class="common-btn">Connect Wallet</a>
         </div>
-
-
-
-
-
-
+        <!-- popup-con -->
+      </div>
+      <!-- tronlink-pop -->
+    </section>
+    <!-- Bottom Footer Nav -->
+    <div class="fixed-bottom-nav">
+      <ul class="m-flex j-around">
+        <li>
+          <a href="index.html" class="active"
+            ><span
+              ><img
+                src="./core/images/home.svg"
+                alt=""
+                class="img-fluid" /></span
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="trading.html"
+            ><span
+              ><img
+                src="./core/images/trade.svg"
+                alt=""
+                class="img-fluid" /></span
+            >Swap</a
+          >
+        </li>
+        <li>
+          <a href="index.html"
+            ><span
+              ><img
+                src="./core/images/dbank-logo.svg"
+                alt=""
+                class="img-fluid" /></span
+          ></a>
+        </li>
+        <li>
+          <a href="share.html"
+            ><span
+              ><img
+                src="./core/images/share.svg"
+                alt=""
+                class="img-fluid" /></span
+            >Share</a
+          >
+        </li>
+        <li>
+          <a href="profile.html"
+            ><span
+              ><img
+                src="./core/images/profile.svg"
+                alt=""
+                class="img-fluid" /></span
+            >Me</a
+          >
+        </li>
+      </ul>
+    </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('body').on('click', '.tab-target-link', function(e) {
-          var target = $(this).attr('href');
-          if (target == 'javascript:;') {
-              return
-          }
-          e.preventDefault();
-          var tabBody = '.' + $(this).attr("data-target");
-          var parent = $(this).closest('div');
-          var childli = $(parent).children('ul').find('li');
-          childli.removeClass('active');
-          $(tabBody).removeClass("active-tab");
-          $(this).parent().addClass('active');
-          var target = $(this).attr('href');
-          if (target != 'javascript:;') {
-              $(target).addClass('active-tab');
-          }
+    $(document).ready(function () {
+      $("body").on("click", ".tab-target-link", function (e) {
+        var target = $(this).attr("href");
+        if (target == "javascript:;") {
+          return;
+        }
+        e.preventDefault();
+        var tabBody = "." + $(this).attr("data-target");
+        var parent = $(this).closest("div");
+        var childli = $(parent).children("ul").find("li");
+        childli.removeClass("active");
+        $(tabBody).removeClass("active-tab");
+        $(this).parent().addClass("active");
+        var target = $(this).attr("href");
+        if (target != "javascript:;") {
+          $(target).addClass("active-tab");
+        }
       });
-  });
-</script>
+    });
+  </script>
 </html>
