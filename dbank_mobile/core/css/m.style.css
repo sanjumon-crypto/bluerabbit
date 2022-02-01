@@ -472,7 +472,7 @@ header {
 /*----- Active Staking Mode ---*/
 
 .main-inp-area {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 9%);
   position: relative;
   width: 45%;
   border-radius: 50px;
@@ -508,7 +508,7 @@ header {
   margin-bottom: 0;
 }
 .btns ul li button {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 9%);
   width: 100%;
   border-radius: 50px;
   border: 1px solid #fff;
