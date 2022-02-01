@@ -80,31 +80,60 @@
           <!-- / D1 Tab-->
           <!-- Tab Content -->
           <div class="tab-card active-tab" id="stake">
-            <h4 class="mb-0">Staking:Active</h4>
-            <h6>The Current Staking process is active</h6>
-            <!-- Progress Staking-->
-            <div class="prog-holder mb-2">
-              <div class="progress-area mb-2">
-                <label>Staked Amount</label>
-                <div class="progress-bar glass-tec">
-                  <div class="progress" style="width: 35%"></div>
-                  <span class="prog-label">1000 TRX</span>
-                  <span class="prog-caption">50,000 TRX</span>
+            <!-- Activate Staking -->
+            <div>
+              <h4 class="mb-0">Activate Staking</h4>
+              <h6>Enter the Burning Node activation amount</h6>
+              <div class="mining-node m-flex j-btwenn a-center">
+                <div class="main-inp-area glass-tec">
+                  <input type="text" value="50,000" />
+                  <span class="inp-append">TRX</span>
+                </div>
+                <div class="btns">
+                  <ul>
+                    <li><button></button></li>
+                    <li><button></button></li>
+                    <li><button></button></li>
+                    <li><button></button></li>
+                    <li><button></button></li>
+                    <li><button>Reset</button></li>
+                  </ul>
                 </div>
               </div>
-              <div class="progress-area">
-                <label>Staking Duration</label>
-                <div class="progress-bar glass-tec">
-                  <div class="progress" style="width: 22%"></div>
-                  <span class="prog-label">1000 TRX</span>
-                  <span class="prog-caption">10000 Days</span>
-                </div>
-              </div>
+              <button class="common-btn glass-btn sm-btn fluro-btn">
+                Activate Phase 1
+              </button>
             </div>
-            <!-- Upgrade Btn -->
-            <button class="common-btn glass-btn">Upgrade Limit</button>
+            <!-- Activate Staking -->
+            <!-- Staking:Active -->
+            <div hidden>
+              <h4 class="mb-0">Staking:Active</h4>
+              <h6>The Current Staking process is active</h6>
+              <!-- Progress Staking-->
+              <div class="prog-holder mb-2">
+                <div class="progress-area mb-2">
+                  <label>Staked Amount</label>
+                  <div class="progress-bar glass-tec">
+                    <div class="progress" style="width: 35%"></div>
+                    <span class="prog-label">1000 TRX</span>
+                    <span class="prog-caption">50,000 TRX</span>
+                  </div>
+                </div>
+                <div class="progress-area">
+                  <label>Staking Duration</label>
+                  <div class="progress-bar glass-tec">
+                    <div class="progress" style="width: 22%"></div>
+                    <span class="prog-label">1000 TRX</span>
+                    <span class="prog-caption">10000 Days</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Upgrade Btn -->
+              <button class="common-btn glass-btn">Upgrade Limit</button>
+            </div>
+            <!-- Staking:Active -->
           </div>
-          <div class="tab-card" id="earn">
+          <div class="tab-card" id="burn">
             <!-- Activate Mining Node -->
             <div class="active-mining">
               <h3>Activate Mining Node</h3>
@@ -284,8 +313,8 @@
       <!-- tronlink popup -->
 
       <!-- tronlink popup -->
-      <transition name="fade" appear>
-        <div class="tronlink_pop" v-if="showpop">
+      <transition name="fade" appear v-if="false">
+        <div class="tronlink_pop">
           <div class="popup-con">
             <a class="tronlink_pop_close" v-on:click="closepop">x</a>
             <ul>
