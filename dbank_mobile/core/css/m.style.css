@@ -63,6 +63,9 @@ img {
 .mb-0 {
   margin-bottom: 0 !important;
 }
+.mt-2 {
+  margin-top: 1rem;
+}
 .mb-2 {
   margin-bottom: 1rem;
 }
@@ -192,6 +195,8 @@ header {
 .step-tab-head {
   margin-top: -30px;
   padding-bottom: 50px;
+  position: relative;
+  z-index: 5;
 }
 .button-theme-holder ul li {
   position: relative;
@@ -224,6 +229,10 @@ header {
   font-size: 40px;
   font-weight: bold;
   opacity: 0.7;
+}
+.step-tab-head ul li.active::before {
+  color: #fff;
+  opacity: 1;
 }
 .button-theme-holder ul li > a > figure > img {
   width: 100%;
@@ -464,6 +473,48 @@ header {
 
 .main-inp-area {
   background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  width: 45%;
+  border-radius: 50px;
+  border: 1px solid #fff;
+}
+.main-inp-area input {
+  all: unset;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: none;
+  line-height: 45px;
+}
+.main-inp-area .inp-append {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 12px;
+}
+.btns {
+  width: 55%;
+}
+.btns ul {
+  flex-wrap: wrap;
+}
+.btns ul li {
+  width: 27%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.btns ul li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.btns ul li button {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 10px;
+  line-height: 17px;
 }
 /*---- Signup Tab ---*/
 .tab-card {
@@ -700,4 +751,26 @@ a.tronlink_pop_close {
   background-size: contain;
   background-position: center;
   z-index: 1;
+}
+
+@media only screen and (max-width: 375px) {
+  .mining-node {
+    flex-direction: column;
+  }
+  .main-inp-area {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  .main-inp-area input {
+    line-height: 40px;
+  }
+  .btns {
+    width: 100%;
+  }
+  .btns ul {
+    justify-content: center;
+  }
+  .btns ul li button {
+    line-height: 25px;
+  }
 }

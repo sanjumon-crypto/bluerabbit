@@ -81,22 +81,22 @@
           <!-- Tab Content -->
           <div class="tab-card active-tab" id="stake">
             <!-- Activate Staking -->
-            <div>
+            <div hidden>
               <h4 class="mb-0">Activate Staking</h4>
               <h6>Enter the Burning Node activation amount</h6>
-              <div class="mining-node m-flex j-btwenn a-center">
+              <div class="mining-node m-flex j-btwenn a-center mb-3">
                 <div class="main-inp-area glass-tec">
                   <input type="text" value="50,000" />
                   <span class="inp-append">TRX</span>
                 </div>
                 <div class="btns">
-                  <ul>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button>Reset</button></li>
+                  <ul class="m-flex j-between a-stretch">
+                    <li><button class="glass-tec">+100</button></li>
+                    <li><button class="glass-tec">+1000</button></li>
+                    <li><button class="glass-tec">+10,000</button></li>
+                    <li><button class="glass-tec">+50,000</button></li>
+                    <li><button class="glass-tec">+100,000</button></li>
+                    <li><button class="glass-tec">Reset</button></li>
                   </ul>
                 </div>
               </div>
@@ -129,9 +129,61 @@
                 </div>
               </div>
               <!-- Upgrade Btn -->
-              <button class="common-btn glass-btn">Upgrade Limit</button>
+              <button class="common-btn glass-btn sm-btn">Upgrade Limit</button>
             </div>
             <!-- Staking:Active -->
+            <!-- Top up staking -->
+            <div>
+              <h4>Topup Staking - D1</h4>
+              <div class="mining-node m-flex j-btwenn a-center mb-3">
+                <div class="main-inp-area glass-tec">
+                  <input type="text" value="50,000" />
+                  <span class="inp-append">TRX</span>
+                </div>
+                <div class="btns">
+                  <ul class="m-flex j-between a-stretch">
+                    <li><button class="glass-tec">+100</button></li>
+                    <li><button class="glass-tec">+1000</button></li>
+                    <li><button class="glass-tec">+10,000</button></li>
+                    <li><button class="glass-tec">+50,000</button></li>
+                    <li><button class="glass-tec">+100,000</button></li>
+                    <li><button class="glass-tec">Reset</button></li>
+                  </ul>
+                </div>
+              </div>
+              <button class="common-btn glass-btn sm-btn fluro-btn">
+                Topup Now
+              </button>
+              <h4 class="mb-0 mt-2">Staking: Active - D1</h4>
+              <h6>The Current Staking process is active</h6>
+              <!-- Progress Staking-->
+              <div class="prog-holder mb-2">
+                <div class="progress-area mb-2">
+                  <label>Staked Amount</label>
+                  <div class="progress-bar glass-tec">
+                    <div class="progress" style="width: 35%"></div>
+                    <span class="prog-label">1000 TRX</span>
+                    <span class="prog-caption">50,000 TRX</span>
+                  </div>
+                </div>
+                <div class="progress-area mb-2">
+                  <label>Staking Duration</label>
+                  <div class="progress-bar glass-tec">
+                    <div class="progress" style="width: 22%"></div>
+                    <span class="prog-label">1000 TRX</span>
+                    <span class="prog-caption">10000 Days</span>
+                  </div>
+                </div>
+                <div class="progress-area">
+                  <label>Last Burning</label>
+                  <div class="progress-bar glass-tec">
+                    <div class="progress" style="width: 22%"></div>
+                    <span class="prog-label">13000 TRX</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Top up staking -->
           </div>
           <div class="tab-card" id="burn">
             <!-- Activate Mining Node -->
