@@ -472,7 +472,7 @@ header {
 /*----- Active Staking Mode ---*/
 
 .main-inp-area {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 9%);
   position: relative;
   width: 45%;
   border-radius: 50px;
@@ -488,8 +488,8 @@ header {
 }
 .main-inp-area .inp-append {
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 15px;
+  top: 53%;
   transform: translate(0, -50%);
   font-size: 12px;
 }
@@ -508,7 +508,7 @@ header {
   margin-bottom: 0;
 }
 .btns ul li button {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 9%);
   width: 100%;
   border-radius: 50px;
   border: 1px solid #fff;
@@ -797,7 +797,7 @@ a.tronlink_pop_close {
     flex-direction: column;
   }
   .main-inp-area {
-    width: 60%;
+    width: 65%;
     margin-bottom: 10px;
   }
   .main-inp-area input {
@@ -812,4 +812,10 @@ a.tronlink_pop_close {
   .btns ul li button {
     line-height: 25px;
   }
+  .value-trx::after,
+  .value-trx::before {
+    display: none;
+  }
 }
+
+
