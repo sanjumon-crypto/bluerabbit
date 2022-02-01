@@ -778,3 +778,18 @@ a.tronlink_pop_close {
     display: none;
   }
 }
+
+/*active burning*/
+
+.active-burning ul {
+  padding: 0;
+  margin: 0;
+}
+.active-burning ul li {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.active-burning ul li a {
+  color: #d4d4d4;
+}
