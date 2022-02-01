@@ -488,8 +488,8 @@ header {
 }
 .main-inp-area .inp-append {
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 15px;
+  top: 53%;
   transform: translate(0, -50%);
   font-size: 12px;
 }
@@ -758,7 +758,7 @@ a.tronlink_pop_close {
     flex-direction: column;
   }
   .main-inp-area {
-    width: 60%;
+    width: 65%;
     margin-bottom: 10px;
   }
   .main-inp-area input {
@@ -772,5 +772,9 @@ a.tronlink_pop_close {
   }
   .btns ul li button {
     line-height: 25px;
+  }
+  .value-trx::after,
+  .value-trx::before {
+    display: none;
   }
 }
