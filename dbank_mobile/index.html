@@ -1,381 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      DBANK - 100% decentralised crypto asset built on smart contract
-      technology. Open to all, transparent to all
-    </title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="icon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="icon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="icon/favicon-16x16.png"
-    />
-    <meta
-      property="og:title"
-      content="DBANK - 100% decentralised crypto asset built on smart contract technology. Open to all, transparent to all"
-    />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://defeebank.io" />
-    <meta
-      property="og:description"
-      content="DBANK - 100% decentralised crypto asset built on smart contract technology. Open to all, transparent to all"
-    />
-    <meta
-      property="og:image"
-      content="https://defeebank.io/logo/dbank-og.png"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="DBANK" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="./core/css/m.style.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <section class="main-wrapper">
-      <div class="m-container">
-        <header><h1>DBANK</h1></header>
-        <!-- Banner -->
-        <div class="banner-main">
-          <!-- D1 Tab-->
-          <div class="tab-head">
-            <ul class="m-flex j-around">
-              <li class="active"><span>d1</span></li>
-              <li><span>d2</span></li>
-              <li><span>d3</span></li>
-              <li><span>d4</span></li>
-              <li><span>d5</span></li>
-            </ul>
-          </div>
-          <!-- / D1 Tab-->
-          <!-- Tab Content -->
-          <div class="tab-card active-tab" id="stake">
-            <h4 class="mb-0">Staking:Active</h4>
-            <h6>The Current Staking process is active</h6>
-            <!-- Progress Staking-->
-            <div class="prog-holder mb-2">
-              <div class="progress-area mb-2">
-                <label>Staked Amount</label>
-                <div class="progress-bar glass-tec">
-                  <div class="progress" style="width: 0%"></div>
-                  <span class="prog-label">1000 TRX</span>
-                  <span class="prog-caption">50,000 TRX</span>
-                </div>
-              </div>
-              <div class="progress-area">
-                <label>Staking Duration</label>
-                <div class="progress-bar glass-tec">
-                  <div class="progress" style="width: 0%"></div>
-                  <span class="prog-label">1000 TRX</span>
-                  <span class="prog-caption">10000 Days</span>
-                </div>
-              </div>
-            </div>
-            <!-- Upgrade Btn -->
-            <button class="common-btn glass-btn">Upgrade Limit</button>
-          </div>
-          <div class="tab-card" id="earn">
-            <h4>Staking Profit</h4>
-            <div class="value-trx">
-              <h6>3965.93751651 <span>TRX</span></h6>
-            </div>
-            <div class="counter-trx">
-              <p>
-                <span>12<small>Day</small></span>
-                <span>12<small>Hour</small></span>
-                <span>42<small>Min</small></span>
-                <span>52<small>Sec</small></span>
-              </p>
-            </div>
-          </div>
-          <!--  / Tab Content -->
-        </div>
-        <!-- Step Tab Head-->
-        <div class="step-tab-head button-theme-holder">
-          <ul class="m-flex j-evenly">
-            <li data-step="1">
-              <a href="#stake" class="tab-target-link" data-target="tab-card"
-                ><figure class="m-flex j-center a-center">
-                  <img src="./core/images/step-icon/stake.svg" alt="" />
-                </figure>
-                <span>Staking</span></a
-              >
-            </li>
-            <li data-step="2">
-              <a href="#burn" class="tab-target-link" data-target="tab-card"
-                ><figure class="m-flex j-center a-center">
-                  <img src="./core/images/step-icon/burn.svg" alt="" />
-                </figure>
-                <span>Burning</span></a
-              >
-            </li>
-            <li data-step="3">
-              <a href="#earn" class="tab-target-link" data-target="tab-card"
-                ><figure class="m-flex j-center a-center">
-                  <img src="./core/images/step-icon/earn.svg" alt="" />
-                </figure>
-                <span>Earn</span></a
-              >
-            </li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    DBANK - 100% decentralised crypto asset built on smart contract
+    technology. Open to all, transparent to all
+  </title>
+  <link rel="icon" type="image/png" sizes="192x192" href="icon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png" />
+  <meta property="og:title"
+    content="DBANK - 100% decentralised crypto asset built on smart contract technology. Open to all, transparent to all" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://defeebank.io" />
+  <meta property="og:description"
+    content="DBANK - 100% decentralised crypto asset built on smart contract technology. Open to all, transparent to all" />
+  <meta property="og:image" content="https://defeebank.io/logo/dbank-og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="DBANK" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="./core/css/m.style.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+  <section class="main-wrapper" id="app2">
+    <div class="m-container">
+      <header>
+        <h1>DBANK</h1>
+      </header>
+      <!-- Banner -->
+      <div class="banner-main">
+        <!-- D1 Tab-->
+        <div class="tab-head">
+          <ul class="m-flex j-around">
+            <li class="active"><span>d1</span></li>
+            <li><span>d2</span></li>
+            <li><span>d3</span></li>
+            <li><span>d4</span></li>
+            <li><span>d5</span></li>
           </ul>
         </div>
-        <!-- / Step Tab Head-->
-        <!-- Announcement -->
-        <div class="announcement">
-          <div class="icon">
-            <img src="./core/images/alert-bell.svg" alt="" />
-          </div>
-          <div class="bg">
-            <img src="./core/images/announ-bg.svg" alt="" />
-          </div>
-          <marquee scrollamount="3" behavior="scroll" style="font-weight: 500"
-            >Welcome to www.defeebank.io</marquee
-          >
-        </div>
-        <!-- Quicklinks -->
-        <div class="quicklinks button-theme-holder">
-          <ul class="m-flex j-evenly">
-            <li>
-              <a href="#"
-                ><figure class="m-flex j-center a-center">
-                  <img src="./core/images/step-icon/stake.svg" alt="" />
-                </figure>
-                <span>Swap</span></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><figure class="m-flex j-center a-center">
-                  <img src="./core/images/step-icon/burn.svg" alt="DBANK" />
-                </figure>
-                <span>Website</span></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><figure class="m-flex j-center a-center">
-                  <img src="./core/images/share.svg" alt="DBANK" />
-                </figure>
-                <span>Share</span></a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- Rewards -->
-        <div class="rewards">
-          <div class="m-flex j-btwenn">
-            <div class="reward-card">
-              <figure>
-                <img src="./core/images/daily_rewards.png" alt="DBANK" />
-              </figure>
-              <div class="inner-content">
-                <h4>DAILY REWARDS</h4>
-                <h6>600.00 TRX<span>= $ 47.5670</span></h6>
+        <!-- / D1 Tab-->
+        <!-- Tab Content -->
+        <div class="tab-card active-tab" id="stake">
+          <h4 class="mb-0">Staking:Active</h4>
+          <h6>The Current Staking process is active</h6>
+          <!-- Progress Staking-->
+          <div class="prog-holder mb-2">
+            <div class="progress-area mb-2">
+              <label>Staked Amount</label>
+              <div class="progress-bar glass-tec">
+                <div class="progress" style="width: 0%"></div>
+                <span class="prog-label">1000 TRX</span>
+                <span class="prog-caption">50,000 TRX</span>
               </div>
             </div>
-            <div class="reward-card">
-              <figure>
-                <img src="./core/images/commision.png" alt="DBANK" />
-              </figure>
-              <div class="inner-content">
-                <h4>COMMISSIONS</h4>
-                <h6>600.00 TRX<span>= $ 47.5670</span></h6>
+            <div class="progress-area">
+              <label>Staking Duration</label>
+              <div class="progress-bar glass-tec">
+                <div class="progress" style="width: 0%"></div>
+                <span class="prog-label">1000 TRX</span>
+                <span class="prog-caption">10000 Days</span>
               </div>
             </div>
           </div>
+          <!-- Upgrade Btn -->
+          <button class="common-btn glass-btn">Upgrade Limit</button>
         </div>
-        <!-- About us -->
-        <div class="about">
-          <div class="inner-content">
-            <h3>ABOUT US</h3>
-            <h6>We are at our best</h6>
-            <p>
-              Cloud mining offered a potentially cost-effective way of mining
-              for Bitcoins Trx and other cryptocurrencies. At the same time,
-              both Quantitative trading and DeFi technology will allow you to
-              easily participate in blockchain transactions with a small amount
-              of capital, and obtain stable income like insurance.
+        <div class="tab-card" id="earn">
+
+          <div class="active-mining">
+            <h3>Activate Mining Node</h3>
+            <p class="alt">
+              <span>Phase 1 Activation requires</span> 1,000 TRX<br>
+              <span>You mine </span>25,000 SmartTron
             </p>
-            <figure>
-              <img src="./core/images/about.png" alt="" />
-            </figure>
+            <a class="common-btn glass-btn" href="#">Activate Phase 1</a>
+            <h5>Click here to go to the next step.</h5>
+          </div><!-- active-mining -->
+        </div>
+        <div class="tab-card active-tab" id="earn">
+          <h4>Staking Profit</h4>
+          <div class="value-trx">
+            <h6>3965.93751651 <span>TRX</span></h6>
+          </div>
+          <div class="counter-trx">
+            <p>
+              <span>12<small>Day</small></span>
+              <span>12<small>Hour</small></span>
+              <span>42<small>Min</small></span>
+              <span>52<small>Sec</small></span>
+            </p>
           </div>
         </div>
-        <!-- Counter -->
-        <div class="counter">
-          <div class="m-flex j-btwenn">
-            <div class="reward-card">
-              <figure>
-                <img src="./core/images/counter-icon/mined.png" alt="DBANK" />
+        <!--  / Tab Content -->
+
+      </div>
+      <!-- Step Tab Head-->
+      <div class="step-tab-head button-theme-holder">
+        <ul class="m-flex j-evenly">
+          <li data-step="1">
+            <a href="#stake" class="tab-target-link" data-target="tab-card">
+              <figure class="m-flex j-center a-center">
+                <img src="./core/images/step-icon/stake.svg" alt="" />
               </figure>
-              <div class="inner-content">
-                <h4>TOTAL <span>DBANK MINED</span></h4>
-                <h6>55.5280 DBANK</h6>
-              </div>
+              <span>Staking</span>
+            </a>
+          </li>
+          <li data-step="2">
+            <a href="#burn" class="tab-target-link" data-target="tab-card">
+              <figure class="m-flex j-center a-center">
+                <img src="./core/images/step-icon/burn.svg" alt="" />
+              </figure>
+              <span>Burning</span>
+            </a>
+          </li>
+          <li data-step="3">
+            <a href="#earn" class="tab-target-link" data-target="tab-card">
+              <figure class="m-flex j-center a-center">
+                <img src="./core/images/step-icon/earn.svg" alt="" />
+              </figure>
+              <span>Earn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- / Step Tab Head-->
+      <!-- Announcement -->
+      <div class="announcement">
+        <div class="icon">
+          <img src="./core/images/alert-bell.svg" alt="" />
+        </div>
+        <div class="bg">
+          <img src="./core/images/announ-bg.svg" alt="" />
+        </div>
+        <marquee scrollamount="3" behavior="scroll" style="font-weight: 500">Welcome to www.defeebank.io</marquee>
+      </div>
+      <!-- Quicklinks -->
+      <div class="quicklinks button-theme-holder">
+        <ul class="m-flex j-evenly">
+          <li>
+            <a href="#">
+              <figure class="m-flex j-center a-center">
+                <img src="./core/images/step-icon/stake.svg" alt="" />
+              </figure>
+              <span>Swap</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure class="m-flex j-center a-center">
+                <img src="./core/images/step-icon/burn.svg" alt="DBANK" />
+              </figure>
+              <span>Website</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure class="m-flex j-center a-center">
+                <img src="./core/images/share.svg" alt="DBANK" />
+              </figure>
+              <span>Share</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Rewards -->
+      <div class="rewards">
+        <div class="m-flex j-btwenn">
+          <div class="reward-card">
+            <figure>
+              <img src="./core/images/daily_rewards.png" alt="DBANK" />
+            </figure>
+            <div class="inner-content">
+              <h4>DAILY REWARDS</h4>
+              <h6>600.00 TRX<span>= $ 47.5670</span></h6>
             </div>
-            <div class="reward-card">
-              <figure>
-                <img src="./core/images/counter-icon/burning.png" alt="DBANK" />
-              </figure>
-              <div class="inner-content">
-                <h4>TOTAL <span>BURNING PAYOUT</span></h4>
-                <h6>55.52808765 TRX<span>$ 3.817.607</span></h6>
-              </div>
-            </div>
-            <div class="reward-card">
-              <figure>
-                <img
-                  src="./core/images/counter-icon/received.png"
-                  alt="DBANK"
-                />
-              </figure>
-              <div class="inner-content">
-                <h4>TOTAL <span>RECEIVED</span></h4>
-                <h6>55.52808765 TRX<span>$ 3.817.607</span></h6>
-              </div>
+          </div>
+          <div class="reward-card">
+            <figure>
+              <img src="./core/images/commision.png" alt="DBANK" />
+            </figure>
+            <div class="inner-content">
+              <h4>COMMISSIONS</h4>
+              <h6>600.00 TRX<span>= $ 47.5670</span></h6>
             </div>
           </div>
         </div>
       </div>
+      <!-- About us -->
+      <div class="about">
+        <div class="inner-content">
+          <h3>ABOUT US</h3>
+          <h6>We are at our best</h6>
+          <p>
+            Cloud mining offered a potentially cost-effective way of mining
+            for Bitcoins Trx and other cryptocurrencies. At the same time,
+            both Quantitative trading and DeFi technology will allow you to
+            easily participate in blockchain transactions with a small amount
+            of capital, and obtain stable income like insurance.
+          </p>
+          <figure>
+            <img src="./core/images/about.png" alt="" />
+          </figure>
+        </div>
+      </div>
+      <!-- Counter -->
+      <div class="counter">
+        <div class="m-flex j-btwenn">
+          <div class="reward-card">
+            <figure>
+              <img src="./core/images/counter-icon/mined.png" alt="DBANK" />
+            </figure>
+            <div class="inner-content">
+              <h4>TOTAL <span>DBANK MINED</span></h4>
+              <h6>55.5280 DBANK</h6>
+            </div>
+          </div>
+          <div class="reward-card">
+            <figure>
+              <img src="./core/images/counter-icon/burning.png" alt="DBANK" />
+            </figure>
+            <div class="inner-content">
+              <h4>TOTAL <span>BURNING PAYOUT</span></h4>
+              <h6>55.52808765 TRX<span>$ 3.817.607</span></h6>
+            </div>
+          </div>
+          <div class="reward-card">
+            <figure>
+              <img src="./core/images/counter-icon/received.png" alt="DBANK" />
+            </figure>
+            <div class="inner-content">
+              <h4>TOTAL <span>RECEIVED</span></h4>
+              <h6>55.52808765 TRX<span>$ 3.817.607</span></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <!-- tronlink popup -->
+    <!-- tronlink popup -->
 
-      <div class="tronlink_pop" style="display: none">
-        <div class="popup-con">
-          <a class="tronlink_pop_close">x</a>
+    <!-- tronlink popup -->
+    <transition name="fade" appear>
+      <div class="tronlink_pop" v-if="showpop">
+        <div class="popup-con"><a class="tronlink_pop_close" v-on:click="closepop">x</a>
           <ul>
             <li>
-              <figure>
-                <a href="#"
-                  ><img
-                    src="https://defeebank.io/core/images/tron-link.svg"
-                    alt="klever"
-                    class="img-fluid"
-                /></a>
-              </figure>
+              <figure><a href="#"><img src="https://defeebank.io/core/images/tron-link.svg" alt="klever"
+                    class="img-fluid"></a></figure>
             </li>
             <li>
-              <figure>
-                <a href="#"
-                  ><img
-                    src="https://defeebank.io/core/images/klever.png"
-                    alt="klever"
-                    class="img-fluid"
-                /></a>
-              </figure>
+              <figure><a href="#"><img src="https://defeebank.io/core/images/klever.png" alt="klever"
+                    class="img-fluid"></a></figure>
             </li>
           </ul>
-          <p class="alt">
-            To join the project you need <br />to use Tronlink wallet
-          </p>
+          <p class="alt">To join the project you need <br>to use Tronlink wallet</p>
           <a href="#" class="common-btn">Connect Wallet</a>
-        </div>
-        <!-- popup-con -->
-      </div>
-      <!-- tronlink-pop -->
-    </section>
-    <!-- Bottom Footer Nav -->
-    <div class="fixed-bottom-nav">
-      <ul class="m-flex j-around">
-        <li>
-          <a href="index.html" class="active"
-            ><span
-              ><img
-                src="./core/images/home.svg"
-                alt=""
-                class="img-fluid" /></span
-            >Home</a
-          >
-        </li>
-        <li>
-          <a href="trading.html"
-            ><span
-              ><img
-                src="./core/images/trade.svg"
-                alt=""
-                class="img-fluid" /></span
-            >Swap</a
-          >
-        </li>
-        <li>
-          <a href="index.html"
-            ><span
-              ><img
-                src="./core/images/dbank-logo.svg"
-                alt=""
-                class="img-fluid" /></span
-          ></a>
-        </li>
-        <li>
-          <a href="share.html"
-            ><span
-              ><img
-                src="./core/images/share.svg"
-                alt=""
-                class="img-fluid" /></span
-            >Share</a
-          >
-        </li>
-        <li>
-          <a href="profile.html"
-            ><span
-              ><img
-                src="./core/images/profile.svg"
-                alt=""
-                class="img-fluid" /></span
-            >Me</a
-          >
-        </li>
-      </ul>
-    </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $("body").on("click", ".tab-target-link", function (e) {
-        var target = $(this).attr("href");
-        if (target == "javascript:;") {
-          return;
-        }
-        e.preventDefault();
-        var tabBody = "." + $(this).attr("data-target");
-        var parent = $(this).closest("div");
-        var childli = $(parent).children("ul").find("li");
-        childli.removeClass("active");
-        $(tabBody).removeClass("active-tab");
-        $(this).parent().addClass("active");
-        var target = $(this).attr("href");
-        if (target != "javascript:;") {
-          $(target).addClass("active-tab");
-        }
-      });
+        </div><!-- popup-con -->
+      </div><!-- tronlink-pop -->
+    </transition>
+    <!-- tronlink popup -->
+
+
+  </section>
+  <!-- Bottom Footer Nav -->
+  <div class="fixed-bottom-nav">
+    <ul class="m-flex j-around">
+      <li>
+        <a href="index.html" class="active"><span><img src="./core/images/home.svg" alt=""
+              class="img-fluid" /></span>Home</a>
+      </li>
+      <li>
+        <a href="trading.html"><span><img src="./core/images/trade.svg" alt="" class="img-fluid" /></span>Swap</a>
+      </li>
+      <li>
+        <figure>
+          <a href="#"><img src="https://defeebank.io/core/images/tron-link.svg" alt="klever" class="img-fluid" /></a>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href="#"><img src="https://defeebank.io/core/images/klever.png" alt="klever" class="img-fluid" /></a>
+        </figure>
+      </li>
+    </ul>
+    <p class="alt">
+      To join the project you need <br />to use Tronlink wallet
+    </p>
+    <a href="#" class="common-btn">Connect Wallet</a>
+  </div>
+  <!-- popup-con -->
+  </div>
+  <!-- tronlink-pop -->
+  </section>
+  <!-- Bottom Footer Nav -->
+  <div class="fixed-bottom-nav">
+    <ul class="m-flex j-around">
+      <li>
+        <a href="index.html" class="active"><span><img src="./core/images/home.svg" alt=""
+              class="img-fluid" /></span>Home</a>
+      </li>
+      <li>
+        <a href="trading.html"><span><img src="./core/images/trade.svg" alt="" class="img-fluid" /></span>Swap</a>
+      </li>
+      <li>
+        <a href="index.html"><span><img src="./core/images/dbank-logo.svg" alt="" class="img-fluid" /></span></a>
+      </li>
+      <li>
+        <a href="share.html"><span><img src="./core/images/share.svg" alt="" class="img-fluid" /></span>Share</a>
+      </li>
+      <li>
+        <a href="profile.html"><span><img src="./core/images/profile.svg" alt="" class="img-fluid" /></span>Me</a>
+      </li>
+    </ul>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="../dbank_mobile/core/js/testView.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("body").on("click", ".tab-target-link", function (e) {
+      var target = $(this).attr("href");
+      if (target == "javascript:;") {
+        return;
+      }
+      e.preventDefault();
+      var tabBody = "." + $(this).attr("data-target");
+      var parent = $(this).closest("div");
+      var childli = $(parent).children("ul").find("li");
+      childli.removeClass("active");
+      $(tabBody).removeClass("active-tab");
+      $(this).parent().addClass("active");
+      var target = $(this).attr("href");
+      if (target != "javascript:;") {
+        $(target).addClass("active-tab");
+      }
     });
-  </script>
+  });
+</script>
+
 </html>
