@@ -475,7 +475,7 @@ header {
   background: rgba(255, 255, 255, 9%);
   position: relative;
   width: 45%;
-  border-radius: 50px;
+  border-radius: 20px;
   border: 1px solid #fff;
 }
 .main-inp-area input {
@@ -510,7 +510,7 @@ header {
 .btns ul li button {
   background: rgba(255, 255, 255, 9%);
   width: 100%;
-  border-radius: 50px;
+  border-radius: 9px;
   border: 1px solid #fff;
   color: #fff;
   font-size: 10px;
