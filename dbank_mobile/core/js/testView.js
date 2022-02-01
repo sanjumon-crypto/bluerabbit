@@ -6,7 +6,7 @@ var tronlinkPop = new Vue({
   },
   mounted() {
   window.addEventListener('load', () => {
-    this.showpop = false;
+    this.showpop = true;
   })
   },
   methods: {
