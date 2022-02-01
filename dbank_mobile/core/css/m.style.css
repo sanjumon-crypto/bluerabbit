@@ -448,6 +448,8 @@ header {
 /*---- Signup Tab ---*/
 .tab-card {
   display: none;
+  position: relative;
+  z-index: 3;
 }
 .tab-card.active-tab {
   display: block;
