@@ -462,6 +462,7 @@ header {
   -webkit-backdrop-filter: blur(18px);
   border: solid 1px #fff;
   background: #9467d2;
+  box-shadow: none;
 }
 .sm-btn {
   line-height: 40px;
