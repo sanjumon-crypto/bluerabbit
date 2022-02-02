@@ -63,7 +63,8 @@
   </head>
 
   <body>
-    <section class="main-wrapper" id="app2">
+    <div id="app2">
+    <section class="main-wrapper">
       <div class="m-container">
         <header>
           <h1>DBANK</h1>
@@ -420,6 +421,35 @@
         <!-- tronlink-pop -->
       </transition>
       <!-- tronlink popup -->
+
+
+
+ <!-- sun swap popup -->
+      <transition name="fade" appear v-if="sunswapop">
+        <div class="tronlink_pop">
+          <div class="popup-con">
+            <a class="tronlink_pop_close" v-on:click="sunswapclosepop">x</a>
+            
+            <div class="sunswap">
+              <figure>
+               <img src="./core/images/sunswap.png" alt="sunswap" />
+              </figure>
+              <h3>SunSwap</h3>
+            </div><!-- sunswap -->
+            <a href="#" class="common-btn">DEFEE</a>
+            <a href="#" class="common-btn">DBANK</a>
+          </div>
+          <!-- popup-con -->
+        </div>
+        <!-- tronlink-pop -->
+      </transition>
+      <!-- sun swap popup -->
+
+
+
+
+
+
     </section>
     <!-- Bottom Footer Nav -->
     <div class="fixed-bottom-nav">
@@ -435,14 +465,10 @@
           >
         </li>
         <li>
-          <a href="trading.html"
-            ><span
-              ><img
-                src="./core/images/trade.svg"
-                alt=""
-                class="img-fluid" /></span
-            >Swap</a
-          >
+          <a v-on:click="showsunswapop">
+            <span>
+              <img src="./core/images/trade.svg" alt="" class="img-fluid" />
+            </span>Swap</a>
         </li>
         <li>
           <a href="index.html"
@@ -475,6 +501,8 @@
         </li>
       </ul>
     </div>
+
+    </div><!-- app2 -->
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
