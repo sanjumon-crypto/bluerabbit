@@ -689,6 +689,7 @@ a.tronlink_pop_close {
   font-size: 24px;
   color: #d1d1d1;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .fade-enter-active,
@@ -754,39 +755,37 @@ a.tronlink_pop_close {
   z-index: 1;
 }
 
-
 /*active burning*/
 
-.active-burning ul{
+.active-burning ul {
   padding: 0;
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 70%;
   margin-bottom: 10px;
 }
-.active-burning ul li{
+.active-burning ul li {
   width: 100%;
-  
 }
-.active-burning ul li a{
+.active-burning ul li a {
   display: inline-flex;
   width: 100%;
-  color: #D4D4D4;
+  color: #d4d4d4;
   font-weight: 100;
   font-size: 12px;
   line-height: 23px;
   justify-content: space-between;
 }
-.active-burning .main-inp-area{
+.active-burning .main-inp-area {
   margin: 0 auto;
   margin-bottom: 15px;
   background: #9467d2;
   border-radius: 20px;
 }
-.active-burning .main-inp-area span{
-  color: #B1B1B1;
+.active-burning .main-inp-area span {
+  color: #b1b1b1;
   font-size: 11px;
 }
-.active-burning h3{
+.active-burning h3 {
   color: #fff;
   font-size: 17px;
   font-weight: 500;
@@ -818,5 +817,3 @@ a.tronlink_pop_close {
     display: none;
   }
 }
-
-
