@@ -819,7 +819,14 @@ a.tronlink_pop_close {
   }
 }
 
+div#stake .mining-node{
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+div#stake .mining-node .main-inp-area{
+  margin-bottom: 10px;
+}
 /*sunswap popup*/
 
 .sunswap{
